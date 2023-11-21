@@ -1,0 +1,489 @@
+[
+    {
+      "type": "switch",
+      "field": "n67g69wvkpu3p",
+      "title": "自动更新",
+      "info": "",
+      "props": {
+        "activeText": ""
+      },
+      "_fc_drag_tag": "switch",
+      "hidden": false,
+      "display": true,
+      "value": false
+    },
+    {
+      "type": "radio",
+      "field": "5zw1m86u3o1do",
+      "title": "系统语言",
+      "info": "",
+      "effect": {
+        "fetch": ""
+      },
+      "options": [
+        {
+          "value": "zh-CN",
+          "label": "中文"
+        },
+        {
+          "value": "en-US",
+          "label": "English"
+        }
+      ],
+      "_fc_drag_tag": "radio",
+      "hidden": false,
+      "display": true,
+      "value": "1"
+    },
+    {
+      "type": "FcRow",
+      "props": {
+        "gutter": 5
+      },
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 22
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "4tlg69wouskwa",
+              "title": "用户邮箱",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 2
+          },
+          "children": [
+            {
+              "type": "Button",
+              "props": {
+                "size": "mini",
+                "type": "primary",
+                "plain": false
+              },
+              "children": [
+                "验证"
+              ],
+              "_fc_drag_tag": "el-button",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 24
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "0fw1m86t9ql6i",
+              "title": "节点名称",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            },
+            {
+              "type": "input",
+              "field": "ns8g69wwh826y",
+              "title": "存储路径",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 24
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "7c9g69wk261vw",
+              "title": "relay节点",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 22
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "lbng69xf6f1bj",
+              "title": "系统权限",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 2
+          },
+          "children": [
+            {
+              "type": "Button",
+              "props": {
+                "size": "mini",
+                "plain": true,
+                "type": "success",
+                "round": false,
+                "circle": false,
+                "icon": ""
+              },
+              "children": [
+                "开通"
+              ],
+              "_fc_drag_tag": "el-button",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "el-divider",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "children": [
+        ""
+      ],
+      "_fc_drag_tag": "el-divider",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "div",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "style": {
+        "width": "100%",
+        "height": "20px"
+      },
+      "_fc_drag_tag": "div",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "FcRow",
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "6h5g69wh45wp7",
+              "title": "数据加密公私钥",
+              "info": "仅支持pem格式的rsa公私钥证书",
+              "props": {
+                "action": "",
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem"
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "fpsg69wjftftz",
+              "title": "数据同步公私钥",
+              "info": "仅支持pem格式的ecc公私钥证书",
+              "props": {
+                "action": "",
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem"
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "95og69wjfjikq",
+              "title": "relay节点公钥",
+              "info": "仅支持pem格式的公钥证书",
+              "props": {
+                "action": "",
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem"
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "el-divider",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "children": [
+        ""
+      ],
+      "_fc_drag_tag": "el-divider",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "FcRow",
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 11
+          },
+          "children": [
+            {
+              "type": "select",
+              "field": "25ng69xuio6sz",
+              "title": "授权API",
+              "info": "",
+              "effect": {
+                "fetch": ""
+              },
+              "props": {
+                "placeholder": "请选择API",
+                "automaticDropdown": false,
+                "popperAppendToBody": true,
+                "defaultFirstOption": false
+              },
+              "options": [
+                {
+                  "value": "1",
+                  "label": "选项1"
+                },
+                {
+                  "value": "2",
+                  "label": "选项2"
+                }
+              ],
+              "_fc_drag_tag": "select",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 13
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "07lg69xrw3ft5",
+              "title": "访问密钥",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "el-transfer",
+      "field": "0vmg69xxy0qdi",
+      "title": "授权访问",
+      "info": "",
+      "props": {
+        "data": [
+          {
+            "key": 1,
+            "label": "备选项 1",
+            "disabled": false
+          },
+          {
+            "key": 2,
+            "label": "备选项 2",
+            "disabled": false
+          },
+          {
+            "key": 3,
+            "label": "备选项 3",
+            "disabled": false
+          },
+          {
+            "key": 4,
+            "label": "备选项 4",
+            "disabled": true
+          },
+          {
+            "key": 5,
+            "label": "备选项 5",
+            "disabled": false
+          },
+          {
+            "key": 6,
+            "label": "备选项 6",
+            "disabled": false
+          },
+          {
+            "key": 7,
+            "label": "备选项 7",
+            "disabled": false
+          },
+          {
+            "key": 8,
+            "label": "备选项 8",
+            "disabled": true
+          },
+          {
+            "key": 9,
+            "label": "备选项 9",
+            "disabled": false
+          },
+          {
+            "key": 10,
+            "label": "备选项 10",
+            "disabled": false
+          },
+          {
+            "key": 11,
+            "label": "备选项 11",
+            "disabled": false
+          },
+          {
+            "key": 12,
+            "label": "备选项 12",
+            "disabled": true
+          },
+          {
+            "key": 13,
+            "label": "备选项 13",
+            "disabled": false
+          },
+          {
+            "key": 14,
+            "label": "备选项 14",
+            "disabled": false
+          },
+          {
+            "key": 15,
+            "label": "备选项 15",
+            "disabled": false
+          }
+        ],
+        "filterable": true
+      },
+      "_fc_drag_tag": "el-transfer",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "el-divider",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "children": [
+        ""
+      ],
+      "_fc_drag_tag": "el-divider",
+      "hidden": false,
+      "display": true
+    }
+  ]

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+	<title>selfdata</title>
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+    <link  href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="assets/css/chewing-grid-atomic.min.css"/>
+</head>
+<body>    
+	<div id="app"></div>
+	<!-- <p id="rs-footer" style="width: 100%; margin-bottom: 10px; text-align: center; font-size: 16px; color: #000;">© 2019-2020 广州改装自己信息技术有限公司 版权所有 粤ICP备1111111号 粤公网安备1111111111号 <a href="/">官网</a></p> -->
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+	function InitFooter() { 
+		var footerHeight = 0;
+		var footerTop = 0;
+		$footer = $("#rs-footer"); 
+		positionFooter(); 
+	　　 function positionFooter() { 
+	　　	footerHeight = $footer.height();  
+	　		footerTop = ($(window).scrollTop()+$(window).height()-footerHeight-10)+"px"; 
+	　　　　 if ( ($(document.body).height()+footerHeight) < $(window).height()) { 
+		　　 $footer.css({ 
+			　　 position: "absolute" 
+		　　 }).stop().animate({ 
+			　　 top: footerTop 
+		　　 }); 
+	　　　　 }else { 
+		　　　　 $footer.css({ 
+			　　 	position: "static" 
+		　　 	}); 
+	　　	} 
+	　　 } 
+		$(window).scroll(positionFooter).resize(positionFooter); 
+	}
+	</script>
+</body>
+</html>

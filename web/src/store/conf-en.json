@@ -1,0 +1,361 @@
+[
+    {
+      "type": "switch",
+      "field": "AutoUpgrade",
+      "title": "AutoUpgrade",
+      "info": "",
+      "props": {
+        "activeText": ""
+      },
+      "_fc_drag_tag": "switch",
+      "hidden": false,
+      "display": true,
+      "value": false
+    },
+    {
+      "type": "radio",
+      "field": "Language",
+      "title": "Language",
+      "info": "",
+      "effect": {
+        "fetch": ""
+      },
+      "options": [
+        {
+          "value": "zh-CN",
+          "label": "中文"
+        },
+        {
+          "value": "en-US",
+          "label": "English"
+        }
+      ],
+      "_fc_drag_tag": "radio",
+      "hidden": false,
+      "display": true,
+      "value": ""
+    },
+    {
+      "type": "radio",
+      "field": "Mode",
+      "title": "Mode",
+      "info": "",
+      "effect": {
+        "fetch": ""
+      },
+      "options": [
+        {
+          "value": "standard",
+          "label": "standard"
+        },
+        {
+          "value": "offline",
+          "label": "offline"
+        }
+      ],
+      "_fc_drag_tag": "radio",
+      "hidden": false,
+      "display": true,
+      "value": ""
+    },
+    {
+      "type": "FcRow",
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 12
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "ListenPort",
+              "title": "ListenPort",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "FcRow",
+      "props": {
+        "gutter": 5
+      },
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 22
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "AuthID",
+              "title": "AuthID",
+              "info": "",
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true,
+              "props": {
+                "readonly": true
+              }
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 2
+          },
+          "children": [
+            {
+              "type": "Button",
+              "field": "verifyBtn",
+              "props": {
+                "type": "primary",
+                "plain": false
+              },
+              "children": [
+                "Verify"
+              ],
+              "_fc_drag_tag": "Button",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "input",
+      "field": "Name",
+      "title": "Name",
+      "info": "",
+      "_fc_drag_tag": "input",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "input",
+      "field": "StoreDir",
+      "title": "StoreDir",
+      "info": "",
+      "_fc_drag_tag": "input",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "input",
+      "field": "Relay",
+      "title": "RelayUrl",
+      "info": "",
+      "props": {
+        "disabled": true
+      },
+      "_fc_drag_tag": "input",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "FcRow",
+      "props": {
+        "gutter": 5
+      },
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 22
+          },
+          "children": [
+            {
+              "type": "input",
+              "field": "SysRight",
+              "title": "SysRight",
+              "info": "",
+              "props": {
+                "readonly": true
+              },
+              "_fc_drag_tag": "input",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 2
+          },
+          "children": [
+            {
+              "type": "Button",
+              "field": "openBtn",
+              "props": {
+                "plain": true,
+                "type": "success",
+                "round": false,
+                "circle": false,
+                "icon": ""
+              },
+              "children": [
+                "Open"
+              ],
+              "_fc_drag_tag": "Button",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "Divider",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "children": [
+        ""
+      ],
+      "_fc_drag_tag": "Divider",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "div",
+      "wrap": {
+        "show": false
+      },
+      "native": false,
+      "style": {
+        "width": "100%",
+        "height": "20px"
+      },
+      "_fc_drag_tag": "div",
+      "hidden": false,
+      "display": true
+    },
+    {
+      "type": "FcRow",
+      "children": [
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "DataCert",
+              "title": "DataCert",
+              "info": "only RSA public-private key certificates in PEM format are supported",
+              "props": {
+                "action": "",
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem",
+                "multiple": true
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "NetCert",
+              "title": "NetCert",
+              "info": "only ECC public-private key certificates in PEM format are supported",
+              "props": {
+                "action": "",
+                "disabled": true,
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem",
+                "multiple": true
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        },
+        {
+          "type": "col",
+          "props": {
+            "span": 8
+          },
+          "children": [
+            {
+              "type": "upload",
+              "field": "RelayPublic",
+              "title": "RelayPublic",
+              "info": "only ECC public key certificates in PEM format are supported",
+              "props": {
+                "action": "",
+                "disabled": true,
+                "onSuccess": "[[FORM-CREATE-PREFIX-function(e,t){t.url=e.data.url}-FORM-CREATE-SUFFIX]]",
+                "uploadType": "file",
+                "autoUpload": false,
+                "accept": ".pem",
+                "multiple": true
+              },
+              "_fc_drag_tag": "upload",
+              "hidden": false,
+              "display": true
+            }
+          ],
+          "_fc_drag_tag": "col",
+          "hidden": false,
+          "display": true
+        }
+      ],
+      "_fc_drag_tag": "row",
+      "hidden": false,
+      "display": true
+    }
+]

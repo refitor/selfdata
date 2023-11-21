@@ -1,0 +1,71 @@
+export const lang = {
+    // global
+    lang: '中文',
+    failed: '失败',
+    successed: '成功',
+    time: '时间',
+    version: '版本',
+    online: '在线',
+    ok: '确定',
+    cancel: '取消',
+    system: '系统',
+    confirm: '确认',
+    operate: '操作',
+    retry: '重试',
+    submit: '提交',
+    buy: '购买',
+
+    // auth
+    authTitle: '用户认证',
+    email: '邮箱',
+    password: '密码',
+    wechat: '微信',
+    code: '验证码',
+    cancel: '取消',
+    isOrNot: '是否',
+    qrcode: '扫码',
+    pleateSelect: '请选择',
+    sendCode: '发送验证码',
+    inputEmail: '请输入认证邮箱',
+    inputCode: '请输入动态验证码',
+    inputPassword: '请输入用户密码',
+
+    // res
+    delete: '删除',
+    path: '路径',
+    file: '文件',
+    createFolder: '创建目录',
+    createFile: '创建文件',
+    resource: '资源',
+    upload: '上传',
+    folder: '文件夹',
+    directory: '目录',
+    update: '更新',
+    rename: '重命名',
+    resOperate: '资源操作',
+    resOperateOK: '资源操作成功',
+    pleaseSelect: '请选择',
+
+    // selfdata
+    selfdata: '私有数据',
+    settings: '系统设置',
+    fpreview: '文件预览',
+    sdSync: '私有数据同步',
+    syncConfirm: '确认同步',
+    encryption: '加密同步',
+    selfdataSync: '资源将从内存文件系统经加密重新生成私有数据覆盖到本地文件系统',
+
+    // operate
+    decryption: '解密管理',
+    logout: '安全退出',
+    operatePlaceholder: '请输入资源名称',
+    authIDPlaceholder: '请输入授权的用户邮箱',
+    operateEditError: '无效操作, 请输入名称',
+
+    // conf
+    open: '开通',
+    AuthID: '授权ID',
+    AuthCode: '授权码',
+    AuthIDPlaceholder: '请输入在官网支付绑定的邮箱',
+    AuthCodePlaceholder: '请输入在官网支付成功后的唯一授权码',
+}
