@@ -4,6 +4,6 @@ Private data SelfData is a high-strength encryption and decryption solution for 
 
 ## document
 
-### [https://doc.refitor.com/selfdata/help.html][1]
+### [https://jacky.refitor.com/refitself][1]
 
-[1]: https://doc.refitor.com/selfdata/help.html
+[1]: https://jacky.refitor.com/refitself
